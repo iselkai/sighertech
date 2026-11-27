@@ -1,0 +1,90 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solicitar Manutenção | SigherTech</title>
+    <link rel="stylesheet" href="maintenance.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">SigherTech</div>
+
+        <nav>
+            <a href="index.html">Início</a>
+            <a href="services.html">Serviços</a>
+            <a href="about.html">Sobre nós</a>
+            <a href="contact.html">Contato</a>
+        </nav>
+    </header>
+
+    <main class="maintenance-container">
+
+        <h1>Solicitar manutenção</h1>
+        <p class="subtitle">
+            Conte-nos o que está acontecendo com seu equipamento.
+        </p>
+
+        <form>
+
+            <label for="device">Qual equipamento precisa de manutenção?</label>
+            <select id="device" name="device" required>
+                <option value="">Selecione o equipamento</option>
+                <option value="computador">Computador</option>
+                <option value="notebook">Notebook</option>
+            </select>
+
+            <label for="type">Qual o tipo de manutenção?</label>
+            <select id="type" name="type" required>
+                <option value="">Selecione o tipo</option>
+                <option value="hardware">Hardware</option>
+                <option value="software">Software</option>
+            </select>
+
+            <label for="category">Qual é o problema?</label>
+            <select id="category" name="category" required>
+                <option value="">Selecione primeiro o equipamento e o tipo</option>
+            </select>
+
+            <label for="description">Descreva o problema</label>
+            <textarea
+                id="description"
+                name="description"
+                placeholder="Explique o que está acontecendo com seu equipamento..."
+                rows="5"
+                required
+            ></textarea>
+
+            <label for="appointment-date">Escolha uma data:</label>
+            <input
+                type="date"
+                id="appointment-date"
+                name="appointment-date"
+                required
+            >
+
+            <label for="appointment-time">Escolha um horário:</label>
+            <select id="appointment-time" name="appointment-time" required>
+                <option value="">Selecione um horário</option>
+                <option value="08:00">08:00</option>
+                <option value="09:00">09:00</option>
+                <option value="10:00">10:00</option>
+                <option value="11:00">11:00</option>
+                <option value="13:00">13:00</option>
+                <option value="14:00">14:00</option>
+                <option value="15:00">15:00</option>
+                <option value="16:00">16:00</option>
+                <option value="17:00">17:00</option>
+            </select>
+
+
+            <button type="submit">Continuar</button>
+
+        </form>
+
+    </main>
+<script src="maintenance.js"></script>
+</body>
+</html>
