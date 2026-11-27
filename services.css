@@ -1,0 +1,253 @@
+
+/* CONFIGURAÇÕES GERAIS */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #06152e;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+
+/* MENU SUPERIOR */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 8%;
+}
+
+.logo h2 {
+    font-size: 28px;
+    color: white;
+}
+
+.logo span {
+    color: #008cff;
+}
+
+nav {
+    display: flex;
+    gap: 35px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #008cff;
+}
+
+.login a {
+    color: #008cff;
+    text-decoration: none;
+    border: 1px solid #008cff;
+    padding: 10px 25px;
+    border-radius: 8px;
+}
+
+
+/* PÁGINA DE SERVIÇOS */
+
+.servicos {
+    padding: 60px 8%;
+    min-height: 85vh;
+}
+
+
+/* TÍTULO */
+
+.titulo-servicos {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 60px;
+}
+
+.titulo-servicos h1 {
+    color: #008cff;
+    font-size: 42px;
+    margin-bottom: 20px;
+    text-shadow: 0 0 12px #008cff;
+}
+
+.titulo-servicos p {
+    color: #c5d4e8;
+    font-size: 17px;
+    line-height: 1.7;
+}
+
+
+/* CARDS */
+
+.categorias-servicos {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.card-servico {
+    background-color: #0b2040;
+
+    border: 1px solid #087cff;
+    border-radius: 12px;
+
+    padding: 30px;
+
+    width: 320px;
+
+    box-shadow: 0 0 12px rgba(0, 140, 255, 0.2);
+
+    transition: 0.3s;
+}
+
+.card-servico:hover {
+    transform: translateY(-10px);
+
+    box-shadow:
+        0 0 15px #008cff,
+        0 0 25px rgba(0, 140, 255, 0.4);
+}
+
+
+/* IDENTIFICAÇÃO DOS CARDS */
+
+.icone-servico {
+    background-color: #062c50;
+
+    border: 1px solid #008cff;
+    border-radius: 10px;
+
+    width: 55px;
+    height: 55px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 25px;
+}
+
+.icone-servico h2 {
+    color: #008cff;
+    font-size: 22px;
+}
+
+
+/* TEXTOS DOS CARDS */
+
+.card-servico > h2 {
+    color: #008cff;
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+.card-servico p {
+    color: #c5d4e8;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.card-servico ul {
+    padding-left: 20px;
+}
+
+.card-servico li {
+    color: #c5d4e8;
+    margin-bottom: 12px;
+    line-height: 1.4;
+}
+
+
+/* CHAMADA FINAL */
+
+.chamada-servicos {
+    text-align: center;
+
+    background-color: #0b2040;
+
+    border: 1px solid #087cff;
+    border-radius: 12px;
+
+    padding: 40px 20px;
+
+    margin-top: 70px;
+
+    box-shadow: 0 0 15px rgba(0, 140, 255, 0.2);
+}
+
+.chamada-servicos h2 {
+    color: #008cff;
+    font-size: 26px;
+    margin-bottom: 15px;
+}
+
+.chamada-servicos p {
+    color: #c5d4e8;
+    margin-bottom: 25px;
+}
+
+
+/* BOTÃO */
+
+.botao-servicos {
+    display: inline-block;
+
+    background-color: #008cff;
+    color: white;
+
+    text-decoration: none;
+
+    padding: 15px 30px;
+
+    border-radius: 8px;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+.botao-servicos:hover {
+    background-color: #0066cc;
+    box-shadow: 0 0 15px #008cff;
+}
+
+
+/* RESPONSIVIDADE */
+
+@media (max-width: 768px) {
+
+    header {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    nav {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .titulo-servicos h1 {
+        font-size: 32px;
+    }
+
+    .card-servico {
+        width: 100%;
+    }
+
+}
+body{
+    margin: 0;
+    min-height: 100vh;
+    background: rgb(22, 22, 50);
+}
