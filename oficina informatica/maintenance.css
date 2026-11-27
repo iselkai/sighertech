@@ -118,3 +118,15 @@ button:hover {
         padding: 25px;
     }
 }
+
+select,
+textarea,
+input {
+    width: 100%;
+    padding: 13px;
+    border: 1px solid #24466e;
+    border-radius: 6px;
+    background-color: #06152e;
+    color: #ffffff;
+    font-size: 15px;
+}

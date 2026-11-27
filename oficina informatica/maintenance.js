@@ -72,3 +72,17 @@ function updateCategories() {
 
 device.addEventListener("change", updateCategories);
 type.addEventListener("change", updateCategories);
+
+
+const appointmentDate = document.getElementById("appointment-date");
+
+// Obtém a data de hoje no horário local
+const today = new Date();
+const year = today.getFullYear();
+const month = String(today.getMonth() + 1).padStart(2, "0");
+const day = String(today.getDate()).padStart(2, "0");
+
+const todayFormatted = `${year}-${month}-${day}`;
+
+// Impede a seleção de datas anteriores a hoje
+appointmentDate.min = todayFormatted;
